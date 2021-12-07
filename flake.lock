@@ -52,32 +52,56 @@
         "type": "github"
       }
     },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1638122382,
+        "narHash": "sha256-sQzZzAbvKEqN9s0bzWuYmRaA03v40gaJ4+iL1LXjaeI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "74f7e4319258e287b0f9cb95426c9853b282730b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1633325558,
-        "narHash": "sha256-dy/jNEMjUtUyl8HisGbgOvvpTvMLdD1xlwPlDsQzQno=",
+        "lastModified": 1638907064,
+        "narHash": "sha256-TN2zQENv7hsbqHpcMA80gqcMk/Kvvo/a4uVKMBsi16Q=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "00a904f61bd9880bc388edf4ef1aa13b02767256",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1638904514,
+        "narHash": "sha256-kE6Go9l2/Pk6xvZUs0KAdfR61/YAwEZsV5JGNwWpN6U=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "2406a0b2b8fe127410d5eae46076f9e4b08b0030",
+        "rev": "938a36cfce2a2ce63b862151ba1bf2406c783bc1",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "release-21.05",
+        "ref": "release-21.11",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "poetry2nix": {
       "inputs": {
-        "flake-utils": [
-          "beautysh",
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "beautysh",
-          "nixpkgs"
-        ]
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
         "lastModified": 1625240517,
@@ -97,7 +121,7 @@
       "inputs": {
         "beautysh": "beautysh",
         "devshell": "devshell",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
